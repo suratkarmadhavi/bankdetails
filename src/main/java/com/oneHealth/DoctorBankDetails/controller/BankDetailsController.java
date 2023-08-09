@@ -31,7 +31,7 @@ import com.oneHealth.DoctorBankDetails.exception.RecordNotFoundException;
  * @author Anup
  * @version 3.9.10
  */
-@CrossOrigin("*")
+//@CrossOrigin("*")
 @RestController
 @RequestMapping("/api/doctors")
 public class BankDetailsController 

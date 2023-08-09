@@ -25,7 +25,7 @@ COPY target/bankdetails.jar app.jar
 
  # Expose the port your Spring Boot application is running on (change the port accordingly)
 
-EXPOSE 8081
+#EXPOSE 8081
 
  # Run the Spring Boot application when the container starts
 
