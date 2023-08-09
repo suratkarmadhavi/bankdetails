@@ -1,9 +1,12 @@
 package com.oneHealth.DoctorBankDetails.entity;
 
+import org.antlr.v4.runtime.misc.NotNull;
+
+import jakarta.annotation.Nullable;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
+//import jakarta.validation.constraints.NotBlank;
+//import jakarta.validation.constraints.NotNull;
 
 
 
@@ -18,21 +21,22 @@ public class BankDetails
 {
 	@Id
 	private long doctor_id;
-	@NotBlank(message="Bank Name is Required")
+//	@NotBlank(message="Bank Name is Required")
+	@Nullable
 	private String bank_name;
-	@NotNull
+	@Nullable
 	private long acc_number;
-	@NotBlank
+	@Nullable
 	private String ifsc;
-	@NotBlank
+	@Nullable
 	private String upi_id;
-	@NotBlank
+	@Nullable
 	private String address;
-	@NotBlank
+	@Nullable
 	private String pan_number;
-	@NotBlank
+	@Nullable
 	private String aadhar_number;
-	@NotBlank
+	@Nullable
 	private String gst_number;
 	
 	

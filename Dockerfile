@@ -19,14 +19,14 @@ RUN ls
 
 # Copy the Spring Boot application JAR into the container
 
-COPY target/bankdetails.jar app.jar
+COPY target/OneHealth-DoctorBankDetails-0.0.1-SNAPSHOT.jar app1.jar
 
 # COPY feesservice.jar app.jar
 
  # Expose the port your Spring Boot application is running on (change the port accordingly)
 
-#EXPOSE 8081
+EXPOSE 8089
 
  # Run the Spring Boot application when the container starts
 
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "app1.jar"]

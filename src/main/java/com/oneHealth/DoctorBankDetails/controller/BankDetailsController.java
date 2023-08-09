@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.oneHealth.DoctorBankDetails.entity.BankDetails;
 import com.oneHealth.DoctorBankDetails.service.BankDetailsService;
 
-import jakarta.validation.Valid;
+//import jakarta.validation.Valid;
 
 import com.oneHealth.DoctorBankDetails.exception.DatabaseException;
 import com.oneHealth.DoctorBankDetails.exception.ProfileNotFoundException;
@@ -46,7 +47,7 @@ public class BankDetailsController
 	 * @return ResponseEntity<String> A response entity with a success message and HTTP status 201 (CREATED) on successful save.
 	 */
 	@PostMapping("/savebankdetails")
-	public ResponseEntity<String> saveBankDetails(@Valid @RequestBody BankDetails details)
+	public ResponseEntity<String> saveBankDetails(@Validated @RequestBody BankDetails details)
 	{
 		service.saveBankDetails(details);
 		return new ResponseEntity<>("Bank Details Saved Successfully" , HttpStatus.CREATED);
