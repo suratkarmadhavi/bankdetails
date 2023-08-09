@@ -25,7 +25,7 @@ COPY target/OneHealth-DoctorBankDetails-0.0.1-SNAPSHOT.jar app1.jar
 
  # Expose the port your Spring Boot application is running on (change the port accordingly)
 
-EXPOSE 8089
+#EXPOSE 8089
 
  # Run the Spring Boot application when the container starts
 
