@@ -19,7 +19,7 @@ RUN ls
 
 # Copy the Spring Boot application JAR into the container
 
-COPY target/OneHealth-DoctorBankDetails-0.0.1-SNAPSHOT.jar app1.jar
+COPY target/bankdetails.jar app1.jar
 
 # COPY feesservice.jar app.jar
 

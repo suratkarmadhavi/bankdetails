@@ -34,7 +34,7 @@ import com.oneHealth.DoctorBankDetails.exception.RecordNotFoundException;
  */
 //@CrossOrigin("*")
 @RestController
-@RequestMapping("/api/doctors")
+@RequestMapping("/api/doctors/doctorbankdetails")
 public class BankDetailsController 
 {
 	@Autowired

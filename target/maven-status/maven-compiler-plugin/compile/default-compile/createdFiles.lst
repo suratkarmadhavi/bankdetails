@@ -1,5 +1,3 @@
-com\oneHealth\DoctorBankDetails\exception\RecordNotFoundException.class
-com\oneHealth\DoctorBankDetails\service\BankDetailsService.class
 com\oneHealth\DoctorBankDetails\serviceImplementation\BankDetailsServiceImplementation.class
 com\oneHealth\DoctorBankDetails\entity\BankDetails.class
 com\oneHealth\DoctorBankDetails\exception\GlobalExceptionHandler.class
@@ -7,5 +5,7 @@ com\oneHealth\DoctorBankDetails\repository\BankDetailsRepository.class
 com\oneHealth\DoctorBankDetails\OneHealthDoctorBankDetailsServiceApplication.class
 com\oneHealth\DoctorBankDetails\controller\BankDetailsController.class
 com\oneHealth\DoctorBankDetails\DTO\ErrorMessageDTO.class
+com\oneHealth\DoctorBankDetails\exception\RecordNotFoundException.class
 com\oneHealth\DoctorBankDetails\exception\DatabaseException.class
 com\oneHealth\DoctorBankDetails\exception\ProfileNotFoundException.class
+com\oneHealth\DoctorBankDetails\service\BankDetailsService.class
