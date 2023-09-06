@@ -63,10 +63,18 @@ public class BankDetailsController
 	 * @throws ProfileNotFoundException If no bank details are found for the given doctor_id.
 	 */
 	@GetMapping("/getdoctorbankdetails/{id}")
-	public ResponseEntity<BankDetails> getBankDetailsByID(@PathVariable(value="id") Long doctor_id) throws RecordNotFoundException
+	public ResponseEntity<BankDetails> getBankDetailsByID(@PathVariable(value="id") Long doctor_id)
 	{
-		BankDetails obj = service.getBankDetailsByDoctorID(doctor_id);
-		return ResponseEntity.ok().body(obj);
+		BankDetails obj;
+		try {
+			obj = service.getBankDetailsByDoctorID(doctor_id);
+			return ResponseEntity.ok().body(obj);
+		} catch (RecordNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return ResponseEntity.notFound().build();
+		}
+		
 	}
 	
 	
