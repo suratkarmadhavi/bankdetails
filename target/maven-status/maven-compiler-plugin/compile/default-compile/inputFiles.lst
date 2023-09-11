@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:\InfobellIT_Projects\OneHealth\bankdetails\src\main\java\com\oneHealth\DoctorBankDetails\controller\BankDetailsController.java
 D:\InfobellIT_Projects\OneHealth\bankdetails\src\main\java\com\oneHealth\DoctorBankDetails\exception\ProfileNotFoundException.java
 D:\InfobellIT_Projects\OneHealth\bankdetails\src\main\java\com\oneHealth\DoctorBankDetails\OneHealthDoctorBankDetailsServiceApplication.java
@@ -9,3 +10,16 @@ D:\InfobellIT_Projects\OneHealth\bankdetails\src\main\java\com\oneHealth\DoctorB
 D:\InfobellIT_Projects\OneHealth\bankdetails\src\main\java\com\oneHealth\DoctorBankDetails\exception\DatabaseException.java
 D:\InfobellIT_Projects\OneHealth\bankdetails\src\main\java\com\oneHealth\DoctorBankDetails\exception\GlobalExceptionHandler.java
 D:\InfobellIT_Projects\OneHealth\bankdetails\src\main\java\com\oneHealth\DoctorBankDetails\serviceImplementation\BankDetailsServiceImplementation.java
+=======
+D:\OneHealth-Access\bankdetails\src\main\java\com\oneHealth\DoctorBankDetails\repository\BankDetailsRepository.java
+D:\OneHealth-Access\bankdetails\src\main\java\com\oneHealth\DoctorBankDetails\exception\GlobalExceptionHandler.java
+D:\OneHealth-Access\bankdetails\src\main\java\com\oneHealth\DoctorBankDetails\OneHealthDoctorBankDetailsServiceApplication.java
+D:\OneHealth-Access\bankdetails\src\main\java\com\oneHealth\DoctorBankDetails\DTO\ErrorMessageDTO.java
+D:\OneHealth-Access\bankdetails\src\main\java\com\oneHealth\DoctorBankDetails\exception\RecordNotFoundException.java
+D:\OneHealth-Access\bankdetails\src\main\java\com\oneHealth\DoctorBankDetails\service\BankDetailsService.java
+D:\OneHealth-Access\bankdetails\src\main\java\com\oneHealth\DoctorBankDetails\controller\BankDetailsController.java
+D:\OneHealth-Access\bankdetails\src\main\java\com\oneHealth\DoctorBankDetails\exception\DatabaseException.java
+D:\OneHealth-Access\bankdetails\src\main\java\com\oneHealth\DoctorBankDetails\exception\ProfileNotFoundException.java
+D:\OneHealth-Access\bankdetails\src\main\java\com\oneHealth\DoctorBankDetails\entity\BankDetails.java
+D:\OneHealth-Access\bankdetails\src\main\java\com\oneHealth\DoctorBankDetails\serviceImplementation\BankDetailsServiceImplementation.java
+>>>>>>> origin/main

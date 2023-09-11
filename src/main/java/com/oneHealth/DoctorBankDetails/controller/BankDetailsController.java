@@ -69,6 +69,7 @@ public class BankDetailsController
 	 * @return ResponseEntity<BankDetails> A response entity containing the bank details and HTTP status 200 (OK) on success.
 	 * @throws ProfileNotFoundException If no bank details are found for the given doctor_id.
 	 */
+<<<<<<< HEAD
 	 @GetMapping("/getdoctorbankdetails/{id}")
 	    public ResponseEntity<BankDetails> getBankDetailsByID(@PathVariable(value="id") Long doctor_id) {
 	        try {
@@ -86,6 +87,23 @@ public class BankDetailsController
 	            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
 	        }
 	    }
+=======
+	@GetMapping("/getdoctorbankdetails/{id}")
+	public ResponseEntity<BankDetails> getBankDetailsByID(@PathVariable(value="id") Long doctor_id)
+	{
+		BankDetails obj;
+		try {
+			obj = service.getBankDetailsByDoctorID(doctor_id);
+			return ResponseEntity.ok().body(obj);
+		} catch (RecordNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return ResponseEntity.notFound().build();
+		}
+		
+	}
+	
+>>>>>>> origin/main
 	
 	
 	/**
